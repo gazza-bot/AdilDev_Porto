@@ -10,3 +10,14 @@
     --color-white-bg: #F3F3F3;
 }
 
+.navbar{
+    @apply flex flex-row justify-between mx-24 my-6 items-center; 
+}
+
+.li-nav{
+    @apply relative font-p text-2xl text-blue-main transition-all duration-300 ease-in-out after:absolute hover:after:bg-blue-main after:bottom-0 after:left-0 after:w-0 after:content-[''] after:h-0.5 hover:after:w-full after:transition-all after:duration-500;
+}
+
+.nav-connect{
+    @apply relative bg-blue-main px-4 py-2 text-white-bg font-p text-2xl transition-all duration-300 after:absolute hover:after:bg-white-bg after:bottom-2 after:left-2 after:w-0 after:content-[''] after:h-0.5 hover:after:w-9/10 after:transition-all after:duration-500;
+}
