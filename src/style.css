@@ -1,19 +1,27 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 @theme{
-    --font-heading: "Bebas Neue", "sans-serif";
-    --font-p: "Merriweather", "serif";
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-p: "Merriweather", serif;
 
     --color-blue-main: #2185D5;
     --color-white-bg: #F3F3F3;
 }
 
 /* Navbar Layout template */
-.navbar{
-    @apply flex flex-row justify-between mx-24 my-6 items-center; 
+.navbar {
+    @apply flex items-center px-12 py-3 md:px-24 md:py-6; 
 }
+
+.ul-nav {
+    @apply  flex-row justify-between gap-10  items-center w-full hidden md:flex
+}
+
+.mobile-nav {
+    @apply flex flex-row justify-between w-full md:hidden 
+}
+
 
 /* Common Navbar Style :
 - color, transitions, and text size */
