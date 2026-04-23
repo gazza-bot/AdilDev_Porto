@@ -1,9 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&display=swap');
 @theme{
     --font-heading: "Bebas Neue", sans-serif;
-    --font-p: "Merriweather", serif;
+    --font-p: "Instrument Serif", serif;
 
     --color-blue-main: #2185D5;
     --color-white-bg: #F3F3F3;
@@ -18,15 +17,10 @@
     @apply  flex-row justify-between gap-10  items-center w-full hidden md:flex
 }
 
-.mobile-nav {
-    @apply flex flex-row justify-between w-full md:hidden 
-}
-
-
 /* Common Navbar Style :
 - color, transitions, and text size */
 .li-nav{
-    @apply relative font-p text-2xl text-blue-main transition-all duration-300 ease-in-out after:absolute hover:after:bg-blue-main after:bottom-0 after:left-0 after:w-0 after:content-[''] after:h-0.5 hover:after:w-full after:transition-all after:duration-500;
+    @apply relative font-p text-2xl text-blue-main;
 }
 
 /* Connect us Style:
@@ -34,4 +28,44 @@
 - maybe we can use margin at after-content*/
 .nav-connect{
     @apply relative bg-blue-main px-4 py-2 text-white-bg font-p text-2xl transition-all duration-300 after:absolute hover:after:bg-white-bg after:bottom-2 after:left-2 after:w-0 after:content-[''] after:h-0.5 hover:after:w-9/10 after:transition-all after:duration-500;
+}
+
+.mobile-nav {
+    @apply flex flex-row justify-between w-full md:hidden items-center h-24
+}
+
+.menu-mobile {
+    @apply fixed inset-0 bg-blue-main flex flex-col justify-center items-center overflow-auto max-h-0 transition-all duration-500 ease-in-out
+}
+
+.menu-mobile.active {
+    @apply max-h-full
+}
+
+.ul-mobile {
+    @apply flex flex-col gap-16 items-center
+}
+
+.li-mobile {
+    @apply font-p text-white-bg text-3xl
+}
+
+.connect-mobile{
+    @apply relative bg-white-bg px-4 py-2 text-blue-main font-p text-2xl transition-all duration-300 after:absolute hover:after:bg-white-bg after:bottom-2 after:left-2 after:w-0 after:content-[''] after:h-0.5 hover:after:w-9/10 after:transition-all after:duration-500;
+}
+
+hr {
+    @apply border-0 bg-white-bg h-px w-full
+}
+
+.mobile-top {
+    @apply absolute top-5 flex flex-row justify-between gap-80 items-center px-12 py-2 h-24 w-full
+}
+
+.ang-mobile {
+    @apply font-heading font-bold text-white-bg tracking-tighter text-2xl
+}
+
+.close-menu {
+    @apply text-2xl font-bold text-white-bg
 }

@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-white-bg">
-    <header class="h-64">
+    <header class="h-24">
         <nav class="navbar">
             <!-- Menu Normal -->
             <ul class="ul-nav">
@@ -20,10 +20,10 @@
 
             <!-- Hamburger button -->
             <div class="mobile-nav">
-                <p class="font-heading text-blue-main font-bold" >
-                    Adil Nibras Gazza
+                <p class="font-heading text-blue-main font-bold tracking-tighter">
+                    ADIL NIBRAS GAZZA
                 </p>
-                <svg class="text-blue-main" width="32px" height="32px" viewBox="0 0 24 24"
+                <svg id="btnMobile" class="text-blue-main" width="32px" height="32px" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <path d="M3 5h18v1H3zm0 8h18v-1H3zm0 7h18v-1H3z" />
                     <path fill="none" d="M0 0h24v24H0z" />
@@ -31,14 +31,22 @@
             </div>
         </nav>
 
-        <div class="menu-mobile">
+        <div id="mobileMenu" class="menu-mobile">
+            <div class="mobile-top">
+                <span class="ang-mobile">ANG</span>
+                <button id="closeBtn" onclick="closeMenu()" class="close-menu">X</button>
+            </div>
             <ul class="ul-mobile">
-                <li>Projects</li>
-                <li>About</li>
-                <li>Let's Connect</li>
+                <li class="li-mobile"><a href="">Projects</a></li>
+                <li class="li-mobile"><a href="">About</a></li>
+                <li class="connect-mobile"><a href="">Let's Connect</a></li>
+                <hr>
+                <li class="li-mobile"><a href="">Instagram</a></li>
+                <li class="li-mobile"><a href="">Linkedin</a></li>
             </ul>
         </div>
     </header>
+    <script src="script.js"></script>
 </body>
 
 </html>
