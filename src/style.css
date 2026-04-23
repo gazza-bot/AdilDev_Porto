@@ -14,13 +14,13 @@
 }
 
 .ul-nav {
-    @apply  flex-row justify-between gap-10  items-center w-full hidden md:flex
+    @apply flex-row justify-between gap-10 items-center w-full hidden md:flex
 }
 
 /* Common Navbar Style :
 - color, transitions, and text size */
 .li-nav{
-    @apply relative font-p text-2xl text-blue-main;
+    @apply relative font-p text-2xl text-blue-main transition-all duration-300 ease-in-out after:absolute hover:after:bg-blue-main after:bottom-0 after:left-0 after:w-0 after:content-[''] after:h-0.5 hover:after:w-full after:transition-all after:duration-500;
 }
 
 /* Connect us Style:
