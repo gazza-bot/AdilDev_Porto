@@ -412,13 +412,13 @@ hr {
 .mobile-top {
   position: absolute;
   top: calc(var(--spacing) * 5);
+  right: calc(var(--spacing) * 0);
+  left: calc(var(--spacing) * 0);
   display: flex;
   height: calc(var(--spacing) * 24);
-  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: calc(var(--spacing) * 80);
   padding-inline: calc(var(--spacing) * 12);
   padding-block: calc(var(--spacing) * 2);
 }

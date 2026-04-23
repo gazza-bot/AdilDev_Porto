@@ -59,7 +59,7 @@ hr {
 }
 
 .mobile-top {
-    @apply absolute top-5 flex flex-row justify-between gap-80 items-center px-12 py-2 h-24 w-full
+    @apply absolute top-5 left-0 right-0 flex flex-row justify-between items-center px-12 py-2 h-24
 }
 
 .ang-mobile {
